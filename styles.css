@@ -6,3 +6,11 @@ font-family: cursive;
 img {
 width: 25%;
 }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+	font-size: 110%;
+}
+td {
+  text-align: center;
+}
