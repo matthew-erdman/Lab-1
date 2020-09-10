@@ -2,11 +2,31 @@
 <html lang="en-US">
 <head>
 	<title>sick site</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheetx" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-	<base target="_blank">
+	<style>
+		img {
+			height: 500px;
+			float: center;
+			display: block;
+			margin-left: auto;
+ 			margin-right: auto;
+		}
+		table, th, td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+			font-size: 110%;
+		}
+		td {
+		  text-align: center;
+		}
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="background-color: paleturquoise">
 
 <!-- Introduction -->
 <div style="color:red;text-align:center;">
@@ -22,7 +42,7 @@
 	<br />
 	<p style="font-size:120%;">On this site, you can...</p>
 	<ol style="text-align:left;display:inline-block;">
-	  <li><a href="https://youtu.be/7Woe3t-U16w" title="haha fumny" style="color:red;">Browse my coolest and most relevant memes</a></li>
+	  <li><a href="https://youtu.be/7Woe3t-U16w" target="_blank" title="haha fumny" style="color:red;">Browse my coolest and most relevant memes</a></li>
 	  <li>Find quotes from some of the world's greatest philosophers</li>
 	  <li>Check the latest meme prices</li>
 	  <li>And much, much more!</li>
@@ -31,14 +51,55 @@
 <hr />
 
 <!-- Memes -->
-<h2 style="text-align:center;" id="Memes"><a style="text-decoration: none;" href="#Top">&#9650; </a>Maymays <a style="text-decoration: none;" href="#Art"> &#9660;</a></h2>
-<img src="wazowskyee.png" alt="wazowskyee"/>
-<br />
-<img src="maymay.jpg" alt="yee meme"/>
+<h2 style="font-family:cursive;color:blue;text-align:center;" id="Memes"><a style="text-decoration: none;" href="#Top">&#9650; </a>Maymays <a style="text-decoration: none;" href="#Art"> &#9660;</a></h2>
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+    <li data-target="#carousel" data-slide-to="3"></li>
+    <li data-target="#carousel" data-slide-to="4"></li>
+    <li data-target="#carousel" data-slide-to="5"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="1.jpg" alt="4 panel yee meme">
+    </div>
+    <div class="carousel-item">
+      <img src="2.jpg" alt="Wazowskyee">
+	  </div>
+    <div class="carousel-item">
+      <img src="3.jpg" alt="Yee portrait">
+    </div>
+    <div class="carousel-item">
+      <img src="4.jpg" alt="Mask yee">
+    </div>
+    <div class="carousel-item">
+      <img src="5.jpg" alt="EmploYEEs only">
+    </div>
+    <div class="carousel-item">
+      <img src="6.jpg" alt="Ye">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#carousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
 <hr />
 
 <!-- ACSII Art -->
-<h2 style="text-align:center;" id="Art"><a style="text-decoration: none;" href="#Memes">&#9650; </a>Artwork <a style="text-decoration: none;" href="#Quotes"> &#9660;</a></h2>
+<h2 style="font-family:cursive;color:blue;text-align:center;" id="Art"><a style="text-decoration: none;" href="#Memes">&#9650; </a>Artwork <a style="text-decoration: none;" href="#Quotes"> &#9660;</a></h2>
 <pre style="color:red; background-color:powderblue; font-size:130%;">
 ░░░░░░░░░▄░░░░░░░░░░░░░░▄░░░░░░
 ░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌░░░░░
@@ -110,7 +171,7 @@
 
 <!-- XXXTentacion Quotes -->
 
-<h2 style="text-align:center;" id="Quotes"><a style="text-decoration: none;" href="#Art">&#9650; </a>Quotes <a style="text-decoration: none;" href="#Shop"> &#9660;</a></h2>
+<h2 style="font-family:cursive;color:blue;text-align:center;" id="Quotes"><a style="text-decoration: none;" href="#Art">&#9650; </a>Quotes <a style="text-decoration: none;" href="#Shop"> &#9660;</a></h2>
 <p>Some deeply philosophical qutoes:</p>
 <blockquote cite="https://quotecatalog.com/communicator/xxxtentacion/">
 “I gave her everything. She took my heart and left me lonely. I've been broken,
@@ -127,7 +188,7 @@ it comes from those you trust the most.”
 <hr />
 
 <!-- Item Shop -->
-<h2 style="text-align:center;" id="Shop"><a style="text-decoration: none;" href="#Quotes">&#9650; </a>Item Shop <a style="text-decoration: none;" href="#Meta"> &#9660;</a></h2>
+<h2 style="font-family:cursive;color:blue;text-align:center;" id="Shop"><a style="text-decoration: none;" href="#Quotes">&#9650; </a>Item Shop <a style="text-decoration: none;" href="#Meta"> &#9660;</a></h2>
 
 <table style="width:100%">
 	<caption>Quality memes for sale!</caption>
@@ -155,27 +216,28 @@ it comes from those you trust the most.”
 	  <td>Lukewarm Maymay</td>
 	  <td>30,947</td>
 	  <td>$5.99</td>
-</tr>
-<tr>
+	</tr>
+	<tr>
 	  <td>Maymay</td>
 	  <td>790,148</td>
 	  <td>$2.99</td>
-</tr>
+	</tr>
 </table>
 <br />
 <p>Currently out of stock...</p>
 <ul>
-  <li>Surreal Maymay</li>
   <li>Fire Maymay</li>
-  <li>OC Maymay</li>
+	<li>Surreal Maymay</li>
+	<li>OC Maymay</li>
 </ul>
 
 <hr />
 
-<!--  -->
-<h2 style="text-align:center;" id="Meta"><a style="text-decoration: none;" href="#Shop">&#9650; </a>M e t a<a style="text-decoration: none;" href="#"> &#9660;</a></h2>
-
+<!-- Meta -->
+<h2 style="font-family:cursive;color:blue;text-align:center;" id="Meta"><a style="text-decoration: none;" href="#Shop">&#9650; </a>M e t a<a style="text-decoration: none;" href="#End"> &#9660;</a></h2>
+<p>Browse the coolest site, inside the coolest site! Cool<sup>2</sup>!</p>
 <iframe src=index.html height="700" width="1000" title="Meta"></iframe>
 
+<a id="End"></a>
 </body>
 </html>
