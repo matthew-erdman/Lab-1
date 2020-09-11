@@ -1,4 +1,4 @@
 # Lab 1
 HTML project
 
-For the more advanced HTML, I made an image carousel to display dank memes.
+For the more advanced HTML, I used Bootstrap 4 to make a dank memes image carousel.
