@@ -9,12 +9,82 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="styles.css"/>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <div class="container">
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+	 <a class="navbar-brand" href="https://youtu.be/7Woe3t-U16w" target="_blank">meem</a>
+
+	 <ul class="navbar-nav">
+
+		 <li class="nav-item dropdown">
+			 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+				 My site
+			 </a>
+			 <div class="dropdown-menu">
+				 <a class="dropdown-item" href="#Intro">Home</a>
+         <a class="dropdown-item" href="#Memes">Maymays</a>
+         <a class="dropdown-item" href="#Art">Artwork</a>
+         <a class="dropdown-item" href="#Quotes">Quotes</a>
+         <a class="dropdown-item" href="#Shop">Item Shop</a>
+         <a class="dropdown-item" href="#Meta">M e t a</a>
+         <a class="dropdown-item" href="#Jojo">Jojo</a>
+			 </div>
+		 </li>
+		 <li class="nav-item dropdown">
+			 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+				 Outside resources
+			 </a>
+			 <div class="dropdown-menu">
+				 <a class="dropdown-item" href="https://youtu.be/b0NSYEIO6gI" target="_blank">Covib</a>
+				 <a class="dropdown-item" href="https://i.redd.it/pb6pmhrnhtm41.png" target="_blank">Helth</a>
+         <a class="dropdown-item" href="https://youtu.be/trQV8Kcj164" target="_blank">Spooder</a>
+         <a class="dropdown-item" href="https://youtu.be/rmh9t3bcTnA" target="_blank">Flamimgo Shrimp</a>
+         <a class="dropdown-item" href="https://youtu.be/olaGwdrFhC8" target="_blank">Cook</a>
+			 </div>
+		 </li>
+		 <li class="nav-item dropdown">
+			 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+				 Emergency eyebleach
+			 </a>
+			 <div class="dropdown-menu">
+				 <a class="dropdown-item" href="https://external-preview.redd.it/HiqnAwSjlLpwc5jcbaaeZozqS7ZvUwFuseEHtmY9COQ.gif?width=640&format=mp4&s=7b290ddc5b0860a9a43c0f8c30d7100d1541a4c9" target="_blank">Blamket</a>
+				 <a class="dropdown-item" href="https://preview.redd.it/rtxyzkz6ap951.jpg?width=640&crop=smart&auto=webp&s=0dcdb921590e11faf1f8b511e3c578c0d0ad049b" target="_blank">Fromg</a>
+         <a class="dropdown-item" href="https://thumbs.gfycat.com/SomeHarshGalapagospenguin-mobile.mp4" target="_blank">Floops</a>
+         <a class="dropdown-item" href="https://i.redd.it/fxv6nmtkq5r51.jpg" target="_blank">Blep</a>
+         <a class="dropdown-item" href="https://i.redd.it/wrcw860g53r51.jpg" target="_blank">Snug</a>
+			 </div>
+		 </li>
+	 </ul>
+	</nav>
+
+	<div class="alert alert-warning alert-dismissible fade show">
+	  <button type="button" class="close" data-dismiss="alert">&times;</button>
+	  <strong>Warning!</strong> This site contains dank and fire memes.
+	</div>
 
 <!-- Introduction -->
 <div style="color:red;text-align:center;">
 	<h1 class="header" style="text-shadow:6px 3px 3px pink;" id="Top" title="this is neither cool nor good" id="Intro">This is <span style="letter-spacing: 8px;">cool</span> and <span style="letter-spacing: 8px;">good</span></h1>
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+	  Warning
+	</button>
+	<div class="modal" id="myModal">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title">Warning!</h4>
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        This site contains dank and fire memes.
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-danger" data-dismiss="modal">Proceed at your own risk</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 	<p>Hello, and welcome to my lit fire site.<strong><em><sub>dabswag</sub></em></strong></p>
 	<address>
 		Built by Matthew Erdman&#169;.<br />
@@ -211,13 +281,27 @@
 	</tr>
 </table>
 <br />
-<p>Currently out of stock...</p>
+<p>Currently restocking...</p>
 <ul style="list-style-type:circle;">
-  <li>Fire Maymay</li>
-	<li>Surreal Maymay</li>
-	<li>OC Maymay</li>
+  <li>Fire Maymay
+	<div class="spinner-grow spinner-grow-sm text-primary"></div>
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%"></div>
+	</div>
+	</li>
+	<li>Surreal Maymay
+		<div class="spinner-grow spinner-grow-sm text-warning"></div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:25%"></div>
+		</div>
+	</li>
+	<li>OC Maymay
+		<div class="spinner-grow spinner-grow-sm text-danger"></div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:2%"></div>
+		</div>
+	</li>
 </ul>
-
 <hr />
 
 <!-- Meta -->
@@ -226,18 +310,18 @@
 <p>Browse the coolest site, inside the coolest site! Cool<sup>2</sup>!</p>
 <iframe src=index.html height="700" width="1000" title="Meta"></iframe>
 </div>
-
 <hr />
 
+<!-- JJBA Summaries-->
 <h2 class="header" style="letter-spacing:30px;" id="Jojo"><a style="text-decoration: none;" href="#Meta">&#9650;</a>Jojo<a style="text-decoration: none;" href="#End">&#9660;</a></h2>
 <div class="row">
 	 <div class="col-md-6">
 		 <div class="row">
 			 <div class="col-6">
-				 <img src="jjba1.jpg" style="height:375px;"/>
+				 In 1868, Dario Brando saves the life of an English nobleman, George Joestar. By taking in Dario's son Dio when the boy becomes fatherless, George hopes to repay the debt he owes to his savior. However Dio, unsatisfied with his station in life, aspires to seize the Joestar house for his own. Wielding an Aztec stone mask with supernatural properties, he sets out to destroy George and his son, Jonathan "JoJo" Joestar, and triggers a chain of events that will continue to echo through the years to come.
 			 </div>
 			 <div class="col-6">
-				 In 1868, Dario Brando saves the life of an English nobleman, George Joestar. By taking in Dario's son Dio when the boy becomes fatherless, George hopes to repay the debt he owes to his savior. However Dio, unsatisfied with his station in life, aspires to seize the Joestar house for his own. Wielding an Aztec stone mask with supernatural properties, he sets out to destroy George and his son, Jonathan "JoJo" Joestar, and triggers a chain of events that will continue to echo through the years to come.
+				 <img src="jjba1.jpg" style="height:375px;"/>
 			 </div>
 		 </div>
 	 </div>
@@ -254,15 +338,16 @@
  </div>
 
  <div class="row empty-row"></div>
+<hr />
 
  <div class="row">
 	 <div class="col-md-6">
 		 <div class="row">
 			 <div class="col-6">
-				 Years after an ancient evil was salvaged from the depths of the sea, Joutarou Kuujou sits peacefully within a Japanese jail cell. He's committed no crime yet demands he not be released, believing he's been possessed by an evil spirit capable of harming those around him. Concerned for her son, Holly Kuujou asks her father, Joseph Joestar, to convince Joutarou to leave the prison. Joseph informs his grandson that the "evil spirit" is in fact something called a "Stand," the physical manifestation of one's fighting spirit which can adopt a variety of deadly forms. After a fiery brawl with Joseph's friend Mohammed Avdol, Joutarou is forced out of his cell and begins learning how to control the power of his Stand.
+				 <img src="jjba3.jpg" style="height:375px;"/>
 			 </div>
 			 <div class="col-6">
-				 <img src="jjba3.jpg" style="height:375px;"/>
+				 Years after an ancient evil was salvaged from the depths of the sea, Joutarou Kuujou sits peacefully within a Japanese jail cell. He's committed no crime yet demands he not be released, believing he's been possessed by an evil spirit capable of harming those around him. Concerned for her son, Holly Kuujou asks her father, Joseph Joestar, to convince Joutarou to leave the prison. Joseph informs his grandson that the "evil spirit" is in fact something called a "Stand," the physical manifestation of one's fighting spirit which can adopt a variety of deadly forms. After a fiery brawl with Joseph's friend Mohammed Avdol, Joutarou is forced out of his cell and begins learning how to control the power of his Stand.
 			 </div>
 		 </div>
 	 </div>
@@ -279,15 +364,16 @@
  </div>
 
  <div class="row empty-row"></div>
+<hr />
 
  <div class="row">
 	 <div class="col-md-6">
 		 <div class="row">
 			 <div class="col-6">
-				 <img src="jjba4.jpg" style="height:375px;"/>
+				 The year is 1999. Morioh, a normally quiet and peaceful town, has recently become a hotbed of strange activity. Joutarou Kuujou, now a marine biologist, heads to the mysterious town to meet Jousuke Higashikata. While the two may seem like strangers at first, Jousuke is actually the illegitimate child of Joutarou's grandfather, Joseph Joestar. When they meet, Joutarou realizes that he may have more in common with Jousuke than just a blood relation.
 			 </div>
 			 <div class="col-6">
-				 The year is 1999. Morioh, a normally quiet and peaceful town, has recently become a hotbed of strange activity. Joutarou Kuujou, now a marine biologist, heads to the mysterious town to meet Jousuke Higashikata. While the two may seem like strangers at first, Jousuke is actually the illegitimate child of Joutarou's grandfather, Joseph Joestar. When they meet, Joutarou realizes that he may have more in common with Jousuke than just a blood relation.
+				 <img src="jjba4.jpg" style="height:375px;"/>
 			 </div>
 		 </div>
 	 </div>
@@ -298,7 +384,6 @@
 			 </div>
 			 <div class="col-6">
 				 In the coastal city of Naples, corruption is teeming—the police blatantly conspire with outlaws, drugs run rampant around the youth, and the mafia governs the streets with an iron fist. However, various fateful encounters will soon occur. Enter Giorno Giovanna, a 15-year-old boy with an eccentric connection to the Joestar family, who makes a living out of part-time jobs and pickpocketing. Furthermore, he is gifted with the unexplained Stand ability to give and create life—growing plants from the ground and turning inanimate objects into live animals, an ability he has dubbed "Gold Experience." Fascinated by the might of local gangsters, Giorno has dreamed of rising up in their ranks and becoming a "Gang-Star," a feat made possible by his encounter with Bruno Buccellati, a member of the Passione gang with his own sense of justice.
-
 			 </div>
 		 </div>
 	 </div>
